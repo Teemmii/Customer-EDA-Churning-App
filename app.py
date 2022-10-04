@@ -449,7 +449,7 @@ def main():
 			+ Total_Ct_Chng_Q4_Q1: Change in Transaction Count (Q4 over Q1)
 			+ Avg_Utilization_Ratio: Average Card Utilization Ratio
 			### By
-			+ Temi Olorunfemi PhD.....Jesus saves
+			## Temi Olorunfemi (PhD).....Jesus saves
 			
 
 			""")
