@@ -345,29 +345,29 @@ def main():
 		# MAKING PREDICTION
 		st.subheader("Prediction")
 		if st.checkbox("Make Prediction"):
-			all_ml_list = {'LR':"LogisticRegression",
-				'DT':"DecisionTree",
-				'XGB':"XGBoosting"}
+			all_ml_list = {'Logistic Regression':"LogisticRegression",
+				'Decision Tree':"DecisionTree",
+				'XGBoosting':"XGBoosting"}
 
 
 			#Model Selection
-			model_choice = st.selectbox("Model Choice", all_ml_list)
+			model_choice = st.selectbox("Select a Machine Learning Model", all_ml_list)
 			prediction_label = {"Churn": 1, "Stay": 0}
-			'''
-			if st.button("prediction_label"):
-				filename = 'finalized_model.sav'
-				loaded_model = pickle.load(open(filename, 'rb'))
-				prediction = loaded_model.predict(sample_data)
-			'''
+			
+			#if st.button("prediction_label"):
+				#filename = 'finalized_model.sav'
+				#loaded_model = pickle.load(open(filename, 'rb'))
+				#prediction = loaded_model.predict(sample_data)
+			
 				
 			if st.button("prediction_label"):
-				if model_choice == 'DT':
+				if model_choice == 'Decision Tree':
 					model_predictor = load_model_n_predict("finalized_model_version2 - DT.sav")
 					prediction = model_predictor.predict(sample_data)
-				elif model_choice == 'LR':
+				elif model_choice == 'Logistic Regression':
 					model_predictor = load_model_n_predict("finalized_model_version2 - LR.sav")
 					prediction = model_predictor.predict(sample_data)
-				elif model_choice == 'XGB':
+				elif model_choice == 'XGBoosting':
 					model_predictor = load_model_n_predict("finalized_model_version2 - XGB.sav")
 					prediction = model_predictor.predict(sample_data)
 					# st.text(prediction)
