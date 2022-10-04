@@ -427,7 +427,7 @@ def main():
 	if choice == 'About':
 		st.subheader("About")
 		st.markdown("""
-			### Predicting if a customer will stop using thier Credit card
+			### Predicting if a customer will stop using a credit card is important to .......bank.  This machine learning application will help identify those likely to leave for targeted services. 
 			#### Built with Streamlit
 			
 			Data dictionary
