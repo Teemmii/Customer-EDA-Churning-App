@@ -355,13 +355,7 @@ def main():
 		st.json(prettified_result)
 		#st.write(Vectorized_result)
 		
-		'''
-		#Make Prediction
-		st.subheader("Prediction")
-		if st.checkbox("Make Prediction"):
-			all_ml_list = ['Logistic Regresion']
-		'''
-
+		
 		# MAKING PREDICTION
 		st.subheader("Prediction")
 		if st.checkbox("Make Prediction"):
