@@ -181,21 +181,6 @@ def main():
 			st.pyplot(fig)
 
 
-		if st.checkbox("Months_on_book"):
-			
-			Months_on_book = np.random.randn(200)
-			# Group data together
-			df = [Months_on_book]
-
-			group_labels = ['Group 1']
-
-			# Create distplot with custom bin_size
-			fig = ff.create_distplot(
-			        df, group_labels, bin_size=[.1, .25, .5])
-
-			# Plot!
-			st.plotly_chart(fig, use_container_width=True)
-
 
 		if st.checkbox("Credit Limit vs Total Revolving Bal vs Total Trans Amt"):
 			Credit_Limit = np.random.randn(200) - 2
