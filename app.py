@@ -289,6 +289,7 @@ def main():
 			#st.pyplot()
 
 		if st.checkbox("Show Correlation Plots"):
+			st.set_option('deprecation.showPyplotGlobalUse', False)
 			st.write(sns.heatmap(df.corr(),annot=True, linewidths=0.5,center=0,cbar=False,cmap="YlGnBu"))
 			st.pyplot()
 
